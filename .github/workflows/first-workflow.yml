@@ -15,7 +15,10 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1
-        run: echo "This is job2, step 1"
-      - name: Step 2
-        run: echo "This is job2, step 2"
+      - name: Cowsays
+        uses: mscoutermarsh/cowsays-action@v1
+        with:
+          # What does the cow say?
+          text: "Ready for prod–ship it!"
+          # Color of your cow
+          color: "magenta" 
