@@ -77,7 +77,7 @@ jobs:
 
       - uses: azure/webapps-deploy@v2
         with:
-          app-name: '{your_prefix}-dev'
+          app-name: 'gtcmyg2wpf47y-dev'
           images: gtcmyg2wpf47ympnpreg.azurecr.io/techexcel/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-test:
@@ -98,7 +98,7 @@ jobs:
 
     - uses: azure/webapps-deploy@v2
       with:
-        app-name: '{your_prefix}-test'
+        app-name: 'gtcmyg2wpf47y-test'
         images: gtcmyg2wpf47ympnpreg.azurecr.io/techexcel/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-prod:
@@ -119,5 +119,5 @@ jobs:
 
     - uses: azure/webapps-deploy@v2
       with:
-        app-name: '{your_prefix}-prod'
+        app-name: 'gtcmyg2wpf47y-prod'
         images: gtcmyg2wpf47ympnpreg.azurecr.io/techexcel/dotnetcoreapp:${{github.run_number}}
